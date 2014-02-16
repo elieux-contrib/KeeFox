@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeeFoxEntryUserControl));
+            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(KeeFoxEntryUserControl));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBoxAutoFill = new System.Windows.Forms.ComboBox();
             this.comboBoxAutoSubmit = new System.Windows.Forms.ComboBox();

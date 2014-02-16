@@ -136,7 +136,4 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Toto okno se automaticky zavře, jakmile bude spojení autorizováno nebo odepřeno.</value>
   </data>
-  <data name="label1.Width" xml:space="preserve">
-    <value>222</value>
-  </data>
 </root>

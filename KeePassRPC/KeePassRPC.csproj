@@ -104,6 +104,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
@@ -176,6 +177,9 @@
     </Compile>
     <Compile Include="KeyChallengeResponse.cs" />
     <Compile Include="KeyContainerClass.cs" />
+    <Compile Include="Localizer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MakeCertificate.cs" />
     <Compile Include="Native.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -185,6 +189,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="RPCClientManagers.cs" />
+    <Compile Include="SingleAssemblyComponentResourceManager.cs" />
     <Compile Include="SRP.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
@@ -285,7 +290,12 @@
     <PostBuildEvent>
       echo POSTBUILDSTEP for $(ProjectName)
 
-      set KPDir=$(ProjectDir)..\..\KeePass-2.25\Build\KeePass\Debug\
+      set KPDirRel=$(ProjectDir)..\..\KeePass-2.25\Build\KeePass\Debug\
+
+      pushd %25KPDirRel%25
+      set KPDir=%25CD%25\
+      popd
+
       set KPPDir=%25KPDir%25plugins\
       set KPPTempDir=%25KPPDir%25$(ProjectName)
 
@@ -324,12 +334,12 @@
 
       REM delete the DLLs from any previous Debug build
       del /Q "%25KPPDir%25$(ProjectName).dll"
-      if errorlevel 1 goto BuildEventFailed
+      rem if errorlevel 1 goto BuildEventFailed
       del /Q "%25KPPDir%25\KeePassRPC.Mono.Security.dll"
       del /Q "%25KPPDir%25\Jayrock.dll"
       del /Q "%25KPPDir%25\Jayrock.Json.dll"
       del /Q "%25KPPDir%25\Fleck2.dll"
-      if errorlevel 1 goto BuildEventFailed
+      rem if errorlevel 1 goto BuildEventFailed
       for /f "usebackq" %25%25i in (`dir /b /ad "%25KPPDir%25\??-??"`) do rmdir /s /q "%25KPPDir%25\%25%25i"
       echo Debug DLLs deleted
 

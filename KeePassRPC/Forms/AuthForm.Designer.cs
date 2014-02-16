@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AuthForm));
+            this.localizer1 = new KeePassRPC.Localizer();
             this.buttonDeny = new System.Windows.Forms.Button();
             this.richTextBoxClientID = new System.Windows.Forms.RichTextBox();
             this.richTextBoxPassword = new System.Windows.Forms.RichTextBox();
@@ -36,6 +37,7 @@
             this.richTextBoxConfirmInstruction = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            resources = new SingleAssemblyComponentResourceManager(typeof(AuthForm));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,34 +50,34 @@
             // 
             // richTextBoxClientID
             // 
-            resources.ApplyResources(this.richTextBoxClientID, "richTextBoxClientID");
             this.richTextBoxClientID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.richTextBoxClientID, "richTextBoxClientID");
             this.richTextBoxClientID.Name = "richTextBoxClientID";
             this.richTextBoxClientID.ReadOnly = true;
             // 
             // richTextBoxPassword
             // 
-            resources.ApplyResources(this.richTextBoxPassword, "richTextBoxPassword");
             this.richTextBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxPassword.DetectUrls = false;
+            resources.ApplyResources(this.richTextBoxPassword, "richTextBoxPassword");
             this.richTextBoxPassword.ForeColor = System.Drawing.Color.Red;
             this.richTextBoxPassword.Name = "richTextBoxPassword";
             this.richTextBoxPassword.ReadOnly = true;
             // 
             // richTextBoxSecurityLevel
             // 
-            resources.ApplyResources(this.richTextBoxSecurityLevel, "richTextBoxSecurityLevel");
             this.richTextBoxSecurityLevel.BackColor = System.Drawing.SystemColors.Control;
             this.richTextBoxSecurityLevel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxSecurityLevel.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.richTextBoxSecurityLevel, "richTextBoxSecurityLevel");
             this.richTextBoxSecurityLevel.Name = "richTextBoxSecurityLevel";
             this.richTextBoxSecurityLevel.ReadOnly = true;
             // 
             // richTextBoxConfirmInstruction
             // 
-            resources.ApplyResources(this.richTextBoxConfirmInstruction, "richTextBoxConfirmInstruction");
             this.richTextBoxConfirmInstruction.BackColor = System.Drawing.SystemColors.Control;
             this.richTextBoxConfirmInstruction.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.richTextBoxConfirmInstruction, "richTextBoxConfirmInstruction");
             this.richTextBoxConfirmInstruction.Name = "richTextBoxConfirmInstruction";
             this.richTextBoxConfirmInstruction.ReadOnly = true;
             // 
@@ -86,11 +88,11 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.richTextBoxConfirmInstruction);
             this.panel1.Controls.Add(this.richTextBoxPassword);
             this.panel1.ForeColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // AuthForm
@@ -119,5 +121,6 @@
         private System.Windows.Forms.RichTextBox richTextBoxConfirmInstruction;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private Localizer localizer1;
     }
 }

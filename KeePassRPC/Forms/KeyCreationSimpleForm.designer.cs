@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeyCreationSimpleForm));
+            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(KeyCreationSimpleForm));
             this.m_lblIntro = new System.Windows.Forms.Label();
             this.labelWarning = new System.Windows.Forms.Label();
             this.m_tbPassword = new System.Windows.Forms.TextBox();

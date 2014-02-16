@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionsForm));
+            this.localizer1 = new KeePassRPC.Localizer();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.m_bannerImage = new System.Windows.Forms.PictureBox();
             this.m_btnCancel = new System.Windows.Forms.Button();
@@ -65,6 +66,7 @@
             this.Expires = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Connected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Revoke = new System.Windows.Forms.DataGridViewButtonColumn();
+            resources = new SingleAssemblyComponentResourceManager(typeof(OptionsForm));
             ((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -84,23 +86,23 @@
             // 
             // m_bannerImage
             // 
-            resources.ApplyResources(this.m_bannerImage, "m_bannerImage");
             this.m_bannerImage.BackColor = System.Drawing.Color.White;
             this.m_bannerImage.Image = global::KeePassRPC.Properties.Resources.KeeFox64;
+            resources.ApplyResources(this.m_bannerImage, "m_bannerImage");
             this.m_bannerImage.Name = "m_bannerImage";
             this.m_bannerImage.TabStop = false;
             // 
             // m_btnCancel
             // 
-            resources.ApplyResources(this.m_btnCancel, "m_btnCancel");
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.m_btnCancel, "m_btnCancel");
             this.m_btnCancel.Name = "m_btnCancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
             // 
             // m_btnOK
             // 
-            resources.ApplyResources(this.m_btnOK, "m_btnOK");
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.m_btnOK, "m_btnOK");
             this.m_btnOK.Name = "m_btnOK";
             this.m_btnOK.UseVisualStyleBackColor = true;
             this.m_btnOK.Click += new System.EventHandler(this.m_btnOK_Click);
@@ -124,20 +126,20 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.textBoxPort);
             this.tabPage1.Controls.Add(this.checkBox2);
             this.tabPage1.Controls.Add(this.checkBox1);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -153,22 +155,22 @@
             // 
             // tabPage2
             // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.labelSecLevelWarning);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBoxAuthExpiry);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -194,21 +196,21 @@
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.comboBoxSecLevelMinClient);
             this.groupBox2.Controls.Add(this.label4);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // comboBoxSecLevelMinClient
             // 
-            resources.ApplyResources(this.comboBoxSecLevelMinClient, "comboBoxSecLevelMinClient");
             this.comboBoxSecLevelMinClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSecLevelMinClient.FormattingEnabled = true;
             this.comboBoxSecLevelMinClient.Items.AddRange(new object[] {
             resources.GetString("comboBoxSecLevelMinClient.Items"),
             resources.GetString("comboBoxSecLevelMinClient.Items1"),
             resources.GetString("comboBoxSecLevelMinClient.Items2")});
+            resources.ApplyResources(this.comboBoxSecLevelMinClient, "comboBoxSecLevelMinClient");
             this.comboBoxSecLevelMinClient.Name = "comboBoxSecLevelMinClient";
             // 
             // label4
@@ -218,21 +220,21 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.comboBoxSecLevelKeePass);
             this.groupBox3.Controls.Add(this.label3);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // comboBoxSecLevelKeePass
             // 
-            resources.ApplyResources(this.comboBoxSecLevelKeePass, "comboBoxSecLevelKeePass");
             this.comboBoxSecLevelKeePass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSecLevelKeePass.FormattingEnabled = true;
             this.comboBoxSecLevelKeePass.Items.AddRange(new object[] {
             resources.GetString("comboBoxSecLevelKeePass.Items"),
             resources.GetString("comboBoxSecLevelKeePass.Items1"),
             resources.GetString("comboBoxSecLevelKeePass.Items2")});
+            resources.ApplyResources(this.comboBoxSecLevelKeePass, "comboBoxSecLevelKeePass");
             this.comboBoxSecLevelKeePass.Name = "comboBoxSecLevelKeePass";
             this.comboBoxSecLevelKeePass.SelectedIndexChanged += new System.EventHandler(this.comboBoxSecLevelKeePass_SelectedIndexChanged);
             // 
@@ -248,18 +250,18 @@
             // 
             // labelSecLevelWarning
             // 
-            resources.ApplyResources(this.labelSecLevelWarning, "labelSecLevelWarning");
             this.labelSecLevelWarning.ForeColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.labelSecLevelWarning, "labelSecLevelWarning");
             this.labelSecLevelWarning.Name = "labelSecLevelWarning";
             // 
             // tabPage3
             // 
-            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.labelAuthorisedClientsFail);
             this.tabPage3.Controls.Add(this.dataGridView1);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
@@ -285,7 +287,6 @@
             // 
             // dataGridView1
             // 
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeRows = false;
@@ -296,6 +297,7 @@
             this.Expires,
             this.Connected,
             this.Revoke});
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -407,5 +409,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Expires;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Connected;
         private System.Windows.Forms.DataGridViewButtonColumn Revoke;
+        private Localizer localizer1;
     }
 }

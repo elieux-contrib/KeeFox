@@ -46,8 +46,8 @@ namespace KeePassRPC.Forms
         {
             _host = host;
             _plugin = plugin;
-            
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionsForm));
+
+            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(OptionsForm));
 
             InitializeComponent();
             Icon = global::KeePassRPC.Properties.Resources.keefox;
