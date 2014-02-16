@@ -308,7 +308,7 @@
       copy "Jayrock.Json.dll" "%25KPPDir%25\Jayrock.Json.dll"
       copy "Fleck2.dll" "%25KPPDir%25\Fleck2.dll"
       if errorlevel 1 goto BuildEventFailed
-        for /f "usebackq" %25%25i in (`dir /b /ad ??-??`) do (
+      for /f "usebackq" %25%25i in (`dir /b /ad ??-??`) do (
         mkdir "%25KPPDir%25\%25%25i"
         copy /y "%25%25i\*" "%25KPPDir%25\%25%25i"
       )
@@ -330,6 +330,7 @@
       del /Q "%25KPPDir%25\Jayrock.Json.dll"
       del /Q "%25KPPDir%25\Fleck2.dll"
       if errorlevel 1 goto BuildEventFailed
+      for /f "usebackq" %25%25i in (`dir /b /ad "%25KPPDir%25\??-??"`) do rmdir /s /q "%25KPPDir%25\%25%25i"
       echo Debug DLLs deleted
 
       REM create temporary directory
@@ -370,6 +371,7 @@
       echo PLGX created
 
       REM copy PLGX to Firefox addon folder (for packaging in a .xpi later)
+      mkdir "$(SolutionDir)Firefox addon\KeeFox\deps"
       copy "%25KPPDir%25KeePassRPC.plgx" "$(SolutionDir)Firefox addon\KeeFox\deps\KeePassRPC.plgx"
       if errorlevel 1 goto BuildEventFailed
       echo PLGX copied to Firefox add-on

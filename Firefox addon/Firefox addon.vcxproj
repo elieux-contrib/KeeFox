@@ -86,7 +86,7 @@ if errorlevel 1 goto BuildEventFailed
 REM compress the files into the complete XPI
 cd $(SolutionDir)XPIs\debug
 del ..\debug.xpi
-zip -r "..\debug.xpi" *
+zip -rq "..\debug.xpi" *
 if errorlevel 1 goto BuildEventFailed
 
 REM xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)$(OutDir)" /i /d /y
@@ -117,7 +117,7 @@ if errorlevel 1 goto BuildEventFailed
 REM compress the files into the complete XPI
 cd $(SolutionDir)XPIs\current
 del ..\current.xpi
-"c:\Program Files (x86)\ZipGenius 6\zg.exe" -add "..\current.xpi" R1 K0 C5 +"*"
+zip -rq "..\current.xpi" *
 if errorlevel 1 goto BuildEventFailed
 
 REM xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)$(OutDir)" /i /d /y
@@ -164,7 +164,7 @@ if errorlevel 1 goto BuildEventFailed
 REM compress the files into the complete XPI
 cd $(SolutionDir)XPIs\current
 del ..\current.xpi
-"c:\Program Files\ZipGenius 6\zg.exe" -add "..\current.xpi" R1 K0 C5 +"*"
+zip -rq "..\current.xpi" *
 if errorlevel 1 goto BuildEventFailed
 
 REM xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)$(OutDir)" /i /d /y
