@@ -78,317 +78,214 @@
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 29);
+            resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // m_bannerImage
             // 
+            resources.ApplyResources(this.m_bannerImage, "m_bannerImage");
             this.m_bannerImage.BackColor = System.Drawing.Color.White;
             this.m_bannerImage.Image = global::KeePassRPC.Properties.Resources.KeeFox64;
-            this.m_bannerImage.Location = new System.Drawing.Point(0, 0);
             this.m_bannerImage.Name = "m_bannerImage";
-            this.m_bannerImage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 10);
-            this.m_bannerImage.Size = new System.Drawing.Size(78, 60);
-            this.m_bannerImage.TabIndex = 2;
             this.m_bannerImage.TabStop = false;
             // 
             // m_btnCancel
             // 
+            resources.ApplyResources(this.m_btnCancel, "m_btnCancel");
             this.m_btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_btnCancel.Location = new System.Drawing.Point(416, 396);
             this.m_btnCancel.Name = "m_btnCancel";
-            this.m_btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.m_btnCancel.TabIndex = 4;
-            this.m_btnCancel.Text = "&Cancel";
             this.m_btnCancel.UseVisualStyleBackColor = true;
             // 
             // m_btnOK
             // 
+            resources.ApplyResources(this.m_btnOK, "m_btnOK");
             this.m_btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.m_btnOK.Location = new System.Drawing.Point(334, 396);
             this.m_btnOK.Name = "m_btnOK";
-            this.m_btnOK.Size = new System.Drawing.Size(75, 23);
-            this.m_btnOK.TabIndex = 3;
-            this.m_btnOK.Text = "&OK";
             this.m_btnOK.UseVisualStyleBackColor = true;
             this.m_btnOK.Click += new System.EventHandler(this.m_btnOK_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(72)))), ((int)(((byte)(152)))));
-            this.label1.Location = new System.Drawing.Point(84, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "KeePassRPC (KeeFox) options";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 401);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Tip: Most KeeFox options can be found in Firefox";
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 6);
+            resources.ApplyResources(this.checkBox2, "checkBox2");
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 0;
-            this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 66);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(491, 324);
-            this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.textBoxPort);
             this.tabPage1.Controls.Add(this.checkBox2);
             this.tabPage1.Controls.Add(this.checkBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(483, 298);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(52, 56);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "label6";
             // 
             // textBoxPort
             // 
-            this.textBoxPort.Location = new System.Drawing.Point(6, 53);
+            resources.ApplyResources(this.textBoxPort, "textBoxPort");
             this.textBoxPort.Name = "textBoxPort";
-            this.textBoxPort.Size = new System.Drawing.Size(40, 20);
-            this.textBoxPort.TabIndex = 2;
             // 
             // tabPage2
             // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.labelSecLevelWarning);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(483, 298);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Connection security";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBoxAuthExpiry);
-            this.groupBox1.Location = new System.Drawing.Point(6, 190);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(471, 95);
-            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Authorisation expires after";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(118, 22);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "(Only affects new authorisations)";
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(8, 42);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(467, 45);
-            this.label9.TabIndex = 11;
-            this.label9.Text = resources.GetString("label9.Text");
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(79, 22);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "hours";
             // 
             // textBoxAuthExpiry
             // 
-            this.textBoxAuthExpiry.Location = new System.Drawing.Point(11, 19);
+            resources.ApplyResources(this.textBoxAuthExpiry, "textBoxAuthExpiry");
             this.textBoxAuthExpiry.Name = "textBoxAuthExpiry";
-            this.textBoxAuthExpiry.Size = new System.Drawing.Size(62, 20);
-            this.textBoxAuthExpiry.TabIndex = 9;
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.comboBoxSecLevelMinClient);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(249, 15);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(228, 106);
-            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Minimum acceptable client security level";
             // 
             // comboBoxSecLevelMinClient
             // 
+            resources.ApplyResources(this.comboBoxSecLevelMinClient, "comboBoxSecLevelMinClient");
             this.comboBoxSecLevelMinClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSecLevelMinClient.FormattingEnabled = true;
             this.comboBoxSecLevelMinClient.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.comboBoxSecLevelMinClient.Location = new System.Drawing.Point(6, 20);
+            resources.GetString("comboBoxSecLevelMinClient.Items"),
+            resources.GetString("comboBoxSecLevelMinClient.Items1"),
+            resources.GetString("comboBoxSecLevelMinClient.Items2")});
             this.comboBoxSecLevelMinClient.Name = "comboBoxSecLevelMinClient";
-            this.comboBoxSecLevelMinClient.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSecLevelMinClient.TabIndex = 2;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(3, 50);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(229, 47);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "This allows you to prevent KeePass from connecting to a client if the client\'s se" +
-    "curity level is set too low.";
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.comboBoxSecLevelKeePass);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(6, 15);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(236, 106);
-            this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "KeePass security level";
             // 
             // comboBoxSecLevelKeePass
             // 
+            resources.ApplyResources(this.comboBoxSecLevelKeePass, "comboBoxSecLevelKeePass");
             this.comboBoxSecLevelKeePass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSecLevelKeePass.FormattingEnabled = true;
             this.comboBoxSecLevelKeePass.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.comboBoxSecLevelKeePass.Location = new System.Drawing.Point(6, 19);
+            resources.GetString("comboBoxSecLevelKeePass.Items"),
+            resources.GetString("comboBoxSecLevelKeePass.Items1"),
+            resources.GetString("comboBoxSecLevelKeePass.Items2")});
             this.comboBoxSecLevelKeePass.Name = "comboBoxSecLevelKeePass";
-            this.comboBoxSecLevelKeePass.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSecLevelKeePass.TabIndex = 3;
             this.comboBoxSecLevelKeePass.SelectedIndexChanged += new System.EventHandler(this.comboBoxSecLevelKeePass_SelectedIndexChanged);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(3, 50);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 47);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "This allows you to control how securely KeePass will store the secret communicati" +
-    "on key.";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(6, 124);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(467, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = " It is possible to set different security levels for KeePass and its clients but " +
-    "this is rarely useful.";
             // 
             // labelSecLevelWarning
             // 
+            resources.ApplyResources(this.labelSecLevelWarning, "labelSecLevelWarning");
             this.labelSecLevelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelSecLevelWarning.Location = new System.Drawing.Point(6, 141);
             this.labelSecLevelWarning.Name = "labelSecLevelWarning";
-            this.labelSecLevelWarning.Size = new System.Drawing.Size(471, 46);
-            this.labelSecLevelWarning.TabIndex = 5;
             // 
             // tabPage3
             // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.labelAuthorisedClientsFail);
             this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(483, 298);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Authorised clients";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(6, 190);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(469, 37);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Revoking a client will prevent it from accessing your passwords. You can re-autho" +
-    "rise next time the client connects.";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 263);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(458, 13);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Expired authorisations are not automatically removed. Just click \"Revoke\" if you " +
-    "want to tidy up.";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 238);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(163, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Names are supplied by the client.";
             // 
             // labelAuthorisedClientsFail
             // 
-            this.labelAuthorisedClientsFail.Location = new System.Drawing.Point(73, 42);
+            resources.ApplyResources(this.labelAuthorisedClientsFail, "labelAuthorisedClientsFail");
             this.labelAuthorisedClientsFail.Name = "labelAuthorisedClientsFail";
-            this.labelAuthorisedClientsFail.Size = new System.Drawing.Size(354, 92);
-            this.labelAuthorisedClientsFail.TabIndex = 1;
-            this.labelAuthorisedClientsFail.Text = "Sorry, you\'re unable to manage the connections you have authorised. You can proba" +
-    "bly fix the problem by (re-)installing the latest version of the Microsoft .NET " +
-    "framework.";
-            this.labelAuthorisedClientsFail.Visible = false;
             // 
             // dataGridView1
             // 
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeRows = false;
@@ -399,60 +296,51 @@
             this.Expires,
             this.Connected,
             this.Revoke});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(477, 171);
-            this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ClientName
             // 
-            this.ClientName.HeaderText = "Name";
+            resources.ApplyResources(this.ClientName, "ClientName");
             this.ClientName.Name = "ClientName";
             this.ClientName.ReadOnly = true;
-            this.ClientName.Width = 80;
             // 
             // UniqueID
             // 
-            this.UniqueID.HeaderText = "Unique ID";
+            resources.ApplyResources(this.UniqueID, "UniqueID");
             this.UniqueID.Name = "UniqueID";
             this.UniqueID.ReadOnly = true;
-            this.UniqueID.Width = 115;
             // 
             // Expires
             // 
-            this.Expires.HeaderText = "Expires";
+            resources.ApplyResources(this.Expires, "Expires");
             this.Expires.Name = "Expires";
             this.Expires.ReadOnly = true;
-            this.Expires.Width = 115;
             // 
             // Connected
             // 
-            this.Connected.HeaderText = "Connected";
+            resources.ApplyResources(this.Connected, "Connected");
             this.Connected.Name = "Connected";
             this.Connected.ReadOnly = true;
             this.Connected.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Connected.Width = 70;
             // 
             // Revoke
             // 
-            this.Revoke.HeaderText = "";
+            resources.ApplyResources(this.Revoke, "Revoke");
             this.Revoke.Name = "Revoke";
             this.Revoke.ReadOnly = true;
             this.Revoke.Text = "Revoke";
             this.Revoke.UseColumnTextForButtonValue = true;
-            this.Revoke.Width = 70;
             // 
             // OptionsForm
             // 
             this.AcceptButton = this.m_btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.m_btnCancel;
-            this.ClientSize = new System.Drawing.Size(510, 425);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -463,8 +351,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OptionsForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "KeePassRPC (KeeFox) Options";
             this.Load += new System.EventHandler(this.OnFormLoad);
             ((System.ComponentModel.ISupportInitialize)(this.m_bannerImage)).EndInit();
             this.tabControl1.ResumeLayout(false);

@@ -26,6 +26,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Resources;
 
 using KeePass;
 using KeePass.UI;
@@ -45,16 +46,18 @@ namespace KeePassRPC.Forms
         {
             _host = host;
             _plugin = plugin;
+            
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionsForm));
 
             InitializeComponent();
             Icon = global::KeePassRPC.Properties.Resources.keefox;
-            this.checkBox1.Text = "Automatically save KeePass database when KeeFox makes changes";
+            this.checkBox1.Text = resources.GetString("code.checkBox1.Text");
             if (host.CustomConfig.GetBool("KeePassRPC.KeeFox.autoCommit", true))
                 this.checkBox1.Checked = true;
             else
                 this.checkBox1.Checked = false;
 
-            this.checkBox2.Text = "Immediately edit entries created by KeeFox";
+            this.checkBox2.Text = resources.GetString("code.checkBox2.Text");
             if (host.CustomConfig.GetBool("KeePassRPC.KeeFox.editNewEntries", false))
                 this.checkBox2.Checked = true;
             else
@@ -77,7 +80,7 @@ namespace KeePassRPC.Forms
                 default: comboBoxSecLevelMinClient.SelectedItem = "High"; break;
             }
 
-            this.label6.Text = "Listen for connections on this TCP/IP port.";
+            this.label6.Text = resources.GetString("code.label6.Text");
             this.textBoxPort.Text = _host.CustomConfig.GetLong("KeePassRPC.webSocket.port", 12546).ToString();
 
             UpdateAuthorisedConnections();

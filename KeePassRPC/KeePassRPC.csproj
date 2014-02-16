@@ -216,6 +216,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AuthForm.cs-CZ.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LocationManager.resx">
       <DependentUpon>LocationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.cs-CZ.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OptionsForm.resx">
       <DependentUpon>OptionsForm.cs</DependentUpon>
@@ -302,6 +308,10 @@
       copy "Jayrock.Json.dll" "%25KPPDir%25\Jayrock.Json.dll"
       copy "Fleck2.dll" "%25KPPDir%25\Fleck2.dll"
       if errorlevel 1 goto BuildEventFailed
+        for /f "usebackq" %25%25i in (`dir /b /ad ??-??`) do (
+        mkdir "%25KPPDir%25\%25%25i"
+        copy /y "%25%25i\*" "%25KPPDir%25\%25%25i"
+      )
       echo Debug DLLs copied to plugins directory
 
       goto BuildEventOK
