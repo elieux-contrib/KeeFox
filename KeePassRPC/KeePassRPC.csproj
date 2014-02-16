@@ -47,7 +47,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\KeePass-2.25\Build\KeePass\Debug\plugins\</OutputPath>
+    <OutputPath>..\..\KeePass-2.25\Build\KeePass\Release\plugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -279,11 +279,11 @@
     <PostBuildEvent>
       echo POSTBUILDSTEP for $(ProjectName)
 
-      set KPDir=c:\Program Files (x86)\KeePass Password Safe 2 DEV\
+      set KPDir=$(ProjectDir)..\..\KeePass-2.25\Build\KeePass\Debug\
       set KPPDir=%25KPDir%25plugins\
       set KPPTempDir=%25KPPDir%25$(ProjectName)
 
-      IF NOT "$(ConfigurationName)"=="Release" Goto :NotDebug
+      IF NOT "$(ConfigurationName)"=="Debug" Goto :NotDebug
       REM In debug mode we want to move the generated DLLs and PDBs to the plugins
       REM directory so we can easily set breakpoints, etc.
       REM In this case, we don't care if the Firefox add-on has missing or outdated

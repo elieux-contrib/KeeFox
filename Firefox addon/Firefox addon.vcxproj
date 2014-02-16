@@ -86,7 +86,7 @@ if errorlevel 1 goto BuildEventFailed
 REM compress the files into the complete XPI
 cd $(SolutionDir)XPIs\debug
 del ..\debug.xpi
-"c:\Program Files\ZipGenius 6\zg.exe" -add "..\debug.xpi" R1 K0 C5 +"*"
+zip -r "..\debug.xpi" *
 if errorlevel 1 goto BuildEventFailed
 
 REM xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)$(OutDir)" /i /d /y

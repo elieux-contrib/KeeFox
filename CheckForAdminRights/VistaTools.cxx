@@ -75,6 +75,8 @@ MODIFICATIONS:
 #define DONTWANT_RunNonElevated
 #define NO_DLL_IMPORTS
 
+#include <Windows.h>
+
 #include <strsafe.h>
 
 #if ( NTDDI_VERSION < NTDDI_LONGHORN )
